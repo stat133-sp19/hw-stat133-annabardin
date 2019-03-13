@@ -44,4 +44,11 @@ With the addition of Durant, the Warrior's overall percent made for both two poi
 
 ### Shot Charts
 
-![GSW Shot CHarts](../images/gsw_shot_charts.png)
+![](http://oi68.tinypic.com/2mx3ekz.jpg)
+
+First, look at the shot charts of the standing position of shooting for five players. From these charts, we can see that compared to green and iguodala, thompson, durant and curry all have a higher rate of total shots. Moreover, out of these it visually appears that Durant, Curry, and Thompson all have the most diverse shooting spots, shooting from areas all across the court. While, at first glance it appears that stephen curry has the best shot record, it is important to note that we need to take into account other very important factors such as shot times and defense.
+
+Conclusion
+----------
+
+To conclude, adding Kevin Durant to the Golden State Warriors was a good addition as evidenced by the shot data. Durant consistently comes out in the top few players on the team for all the categories we examined: two point shots, three point shots, and total shots. Moreover, by watching a game, it is clear that Durant makes points indirectly through assists, but additional data would be need to statistically prove this.
