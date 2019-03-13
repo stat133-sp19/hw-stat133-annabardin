@@ -1,0 +1,30 @@
+---
+title: "Workout 1"
+author: "Anna Bardin"
+date: "March 12, 2019"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Creating the Effective Shooting Tables
+#creating 2PT Effective Shooting % by Player table
+'''{r}
+library(dplyr)
+bind_dataframe <- read.csv("~/workout01/data/shots-data.csv", header = TRUE, stringsAsFactors = FALSE, row.names = 1)
+twopoint_perc_chart <- arrange(summarise(group_by(bind_dataframe, name), 
+                                     total = sum(shot_type == "2PT Field Goal"),
+                                 made = sum(shot_made_flag == "shot_yes" & shot_type == "2PT Field Goal"), perc_made = made/total), desc(perc_made))
+twopoint_perc_chart
+threepoint_perc_chart <- arrange(summarise(group_by(bind_dataframe, name),
+                                   total = sum(shot_type == "3PT Field Goal"),
+                                   made = sum(shot_made_flag == "shot_yes" & shot_type == "3PT Field Goal"), 
+                                   perc_made = made/total), desc(perc_made))
+threepoint_perc_chart
+overall_perc_chart <- arrange(summarise(group_by(bind_dataframe, name),
+                                   total = sum(shot_type == "2PT Field Goal" | shot_type == "3PT Field Goal"),
+                                   made = sum(shot_made_flag == "shot_yes"), 
+                                   perc_made = made/total), desc(perc_made))
+overall_perc_chart
+```
